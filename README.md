@@ -70,7 +70,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Relational Model
 
-[![Modelo Relacional](https://raw.githubusercontent.com/jonfer1022/portfolio/main/src/images/modelo_relacional.PNG "Modelo Relacional")](https://raw.githubusercontent.com/jonfer1022/portfolio/main/src/images/modelo_relacional.PNG "Modelo Relacional")
+[![Modelo Relacional](https://raw.githubusercontent.com/jonfer1022/single-binance-api/main/img/relationa-model.jpg "Modelo Relacional")](https://raw.githubusercontent.com/jonfer1022/single-binance-api/main/img/relationa-model.jpg "Modelo Relacional")
 
 ## License
 
