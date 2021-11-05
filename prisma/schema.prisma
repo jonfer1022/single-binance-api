@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model history {
+  id         Int       @id @default(autoincrement())
+  symbol_id  Int
+  average    Float     @db.Float
+  created_at DateTime? @db.Timestamp(0)
+  symbols    symbols   @relation(fields: [symbol_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "history_ibfk_1")
+
+  @@index([symbol_id], map: "symbol_id")
+}
+
+model symbols {
+  id         Int       @id @default(autoincrement())
+  symbol     String    @db.VarChar(50)
+  created_at DateTime? @db.Timestamp(0)
+  history    history[]
+}
